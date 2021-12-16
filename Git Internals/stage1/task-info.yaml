@@ -1,0 +1,12 @@
+type: edu
+files:
+- name: test/GitInternalsTest.java
+  visible: false
+- name: src/gitinternals/Main.kt
+  visible: true
+- name: test/gitone/objects/4a/8abe7b618ddf9c55adbea359ce891775794a61
+  visible: false
+- name: test/gitone/objects/61/8383db6d7ee3bd2e97b871205f113b6a3ba854
+  visible: false
+- name: test/gitone/objects/a8/7a4a0e9fcf5a8a091c54909b674ac2a051f5e8
+  visible: false

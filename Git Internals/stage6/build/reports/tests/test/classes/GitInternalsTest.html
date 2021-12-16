@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class GitInternalsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class GitInternalsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; GitInternalsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.696s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">start</td>
+<td class="success">0.696s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[1;31m
+Start test 1?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter command:
+&gt; cat-file
+Enter git object hash:
+&gt; 0eee6a98471a350b2c2316313114185ecaf82f0e
+*COMMIT*
+tree: 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parents: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author: Smith mr.smith@matrix original timestamp: 2020-03-29 17:18:20 +03:00
+committer: Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+commit message:
+get docs from feature1
+
+?[1;31m
+Start test 2?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter command:
+&gt; cat-file
+Enter git object hash:
+&gt; 490f96725348e92770d3c6bab9ec532564b7ebe0
+*BLOB*
+fun main() {
+    while(true) {
+        println(&quot;Hello Hyperskill student!&quot;)
+    }
+} 
+
+?[1;31m
+Start test 3?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter command:
+&gt; cat-file
+Enter git object hash:
+&gt; fb043556c251cb450a0d55e4ceb1ff35e12029c3
+*TREE*
+100644 2b26c15c04375d90203783fb4c2a45ff04b571a6 main.kt
+100644 4a8abe7b618ddf9c55adbea359ce891775794a61 readme.txt
+?[1;31m
+Start test 4?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter command:
+&gt; list-branches
+  feature1
+  feature2
+* master
+?[1;31m
+Start test 5?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter command:
+&gt; log
+Enter branch name:
+&gt; master
+Commit: fd362f3f305819d17b4359444aa83e17e7d6924a
+Neo neo@matrix commit timestamp: 2020-04-04 11:42:08 +03:00
+add subfolder
+
+Commit: 39a0337532d7720acc90497043e2ade92c386939
+Neo neo@matrix commit timestamp: 2020-04-04 09:59:23 +03:00
+this commit message will have multiple lines
+we need multiple lines commit message for test purposes
+3
+4
+5
+
+Commit: 6d537a47eddc11f866bcc2013703bf31bfcf9ed8
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:29:08 +03:00
+Merge branch 'feature2'
+
+Commit: 97e638cc1c7135580c3ff93162e727148e1bad05 (merged)
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:27:35 +03:00
+break our software
+
+Commit: 31d679c1c2b8fc787ae014c501d4fa6545faa138
+Neo neo@matrix commit timestamp: 2020-03-29 17:21:48 +03:00
+Merge branch 'feature1'
+
+Commit: 300b1c67b5539bfdcb30f2863d6ac3b3377ad00b (merged)
+Morpheus morpheus@matrix commit timestamp: 2020-03-29 17:19:49 +03:00
+continue work on documentation
+
+Commit: 4107cf41cf55c4fd38e9da8f3d08d1eaefc3254a
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:13:44 +03:00
+continue work
+
+Commit: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:12:52 +03:00
+start kotlin project
+
+Commit: 73324685d9dbd1fdda87f3c5c6f77d79c1b769c2
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:10:52 +03:00
+initial commit
+
+
+?[1;31m
+Start test 6?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter command:
+&gt; log
+Enter branch name:
+&gt; feature2
+Commit: 97e638cc1c7135580c3ff93162e727148e1bad05
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:27:35 +03:00
+break our software
+
+Commit: 0eee6a98471a350b2c2316313114185ecaf82f0e
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+get docs from feature1
+
+Commit: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:12:52 +03:00
+start kotlin project
+
+Commit: 73324685d9dbd1fdda87f3c5c6f77d79c1b769c2
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:10:52 +03:00
+initial commit
+
+
+?[1;31m
+Start test 7?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter command:
+&gt; cat-file
+Enter git object hash:
+&gt; 31cddcbd00e715688cd127ad20c2846f9ed98223
+*COMMIT*
+tree: aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:31:36 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+commit message:
+simple hello
+
+?[1;31m
+Start test 8?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter command:
+&gt; cat-file
+Enter git object hash:
+&gt; dcec4e51e2ce4a46a6206d0d4ab33fa99d8b1ab5
+*COMMIT*
+tree: d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parents: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f | d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:49:02 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+commit message:
+awsome hello
+
+?[1;31m
+Start test 9?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter command:
+&gt; cat-file
+Enter git object hash:
+&gt; aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+*TREE*
+100644 ce013625030ba8dba906f756967f9e9ca394464a hello.txt
+?[1;31m
+Start test 10?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter command:
+&gt; list-branches
+  helloWithFeature1
+  helloWithFeature2
+* main
+?[1;31m
+Start test 11?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter command:
+&gt; log
+Enter branch name:
+&gt; main
+Commit: dcec4e51e2ce4a46a6206d0d4ab33fa99d8b1ab5
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+awsome hello
+
+Commit: d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9 (merged)
+Ivan Petrovich@moon.org commit timestamp: 2021-12-11 22:43:54 -03:00
+hello of the champions
+
+Commit: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:46:28 -03:00
+maybe hello
+
+Commit: 31cddcbd00e715688cd127ad20c2846f9ed98223
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+simple hello
+
+
+?[1;31m
+Start test 12?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter command:
+&gt; log
+Enter branch name:
+&gt; helloWithFeature1
+Commit: c5e4a1239e11e51e95b051e2f25c3325b5004676
+Yulia yulia@coldmail.com commit timestamp: 2021-12-11 22:36:46 -03:00
+internacional hello
+
+Commit: 31cddcbd00e715688cd127ad20c2846f9ed98223
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+simple hello
+
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>command: cat-file
+gitDirectory: test/gitone
+raw content:
+commit 216?tree 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parent 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author Smith &lt;mr.smith@matrix&gt; 1585491500 +0300
+committer Cypher &lt;cypher@matrix&gt; 1585491952 +0300
+
+get docs from feature1
+
+git object:
+*COMMIT*
+tree: 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parents: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author: Smith mr.smith@matrix original timestamp: 2020-03-29 17:18:20 +03:00
+committer: Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+commit message:
+get docs from feature1
+
+command: cat-file
+gitDirectory: test/gitone
+raw content:
+blob 85?fun main() {
+    while(true) {
+        println(&quot;Hello Hyperskill student!&quot;)
+    }
+} 
+
+git object:
+*BLOB*
+fun main() {
+    while(true) {
+        println(&quot;Hello Hyperskill student!&quot;)
+    }
+} 
+
+command: cat-file
+gitDirectory: test/gitone
+raw content:
+tree 73?100644 main.kt?+&amp;￁\?7]ﾐ 7ﾃ￻L*E??ﾵqﾦ100644 readme.txt?Jﾊﾾ{aﾍ￟ﾜUﾭﾾﾣYￎﾉ?uyJa
+git object:
+*TREE*
+100644 2b26c15c04375d90203783fb4c2a45ff04b571a6 main.kt
+100644 4a8abe7b618ddf9c55adbea359ce891775794a61 readme.txt
+command: list-branches
+gitDirectory: test/gitone
+head content: ref: refs/heads/master
+result:
+  feature1
+  feature2
+* master
+command: log
+gitDirectory: test/gitone
+Commit: fd362f3f305819d17b4359444aa83e17e7d6924a
+Neo neo@matrix commit timestamp: 2020-04-04 11:42:08 +03:00
+add subfolder
+
+Commit: 39a0337532d7720acc90497043e2ade92c386939
+Neo neo@matrix commit timestamp: 2020-04-04 09:59:23 +03:00
+this commit message will have multiple lines
+we need multiple lines commit message for test purposes
+3
+4
+5
+
+Commit: 6d537a47eddc11f866bcc2013703bf31bfcf9ed8
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:29:08 +03:00
+Merge branch 'feature2'
+
+Commit: 97e638cc1c7135580c3ff93162e727148e1bad05 (merged)
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:27:35 +03:00
+break our software
+
+Commit: 31d679c1c2b8fc787ae014c501d4fa6545faa138
+Neo neo@matrix commit timestamp: 2020-03-29 17:21:48 +03:00
+Merge branch 'feature1'
+
+Commit: 300b1c67b5539bfdcb30f2863d6ac3b3377ad00b (merged)
+Morpheus morpheus@matrix commit timestamp: 2020-03-29 17:19:49 +03:00
+continue work on documentation
+
+Commit: 4107cf41cf55c4fd38e9da8f3d08d1eaefc3254a
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:13:44 +03:00
+continue work
+
+Commit: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:12:52 +03:00
+start kotlin project
+
+Commit: 73324685d9dbd1fdda87f3c5c6f77d79c1b769c2
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:10:52 +03:00
+initial commit
+
+
+command: log
+gitDirectory: test/gitone
+Commit: 97e638cc1c7135580c3ff93162e727148e1bad05
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:27:35 +03:00
+break our software
+
+Commit: 0eee6a98471a350b2c2316313114185ecaf82f0e
+Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+get docs from feature1
+
+Commit: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:12:52 +03:00
+start kotlin project
+
+Commit: 73324685d9dbd1fdda87f3c5c6f77d79c1b769c2
+Neo mr.anderson@matrix commit timestamp: 2020-03-29 17:10:52 +03:00
+initial commit
+
+
+command: cat-file
+gitDirectory: test/gittwo
+raw content:
+commit 167?tree aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author Kalinka &lt;Kali.k4@email.com&gt; 1639272696 -0300
+committer Kalinka &lt;Kali.k4@email.com&gt; 1639272696 -0300
+
+simple hello
+
+git object:
+*COMMIT*
+tree: aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:31:36 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+commit message:
+simple hello
+
+command: cat-file
+gitDirectory: test/gittwo
+raw content:
+commit 263?tree d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parent 5ad3239e54ba7c533d9f215a13ac82d14197cd8f
+parent d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author Kalinka &lt;Kali.k4@email.com&gt; 1639273742 -0300
+committer Kalinka &lt;Kali.k4@email.com&gt; 1639273742 -0300
+
+awsome hello
+
+git object:
+*COMMIT*
+tree: d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parents: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f | d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:49:02 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+commit message:
+awsome hello
+
+command: cat-file
+gitDirectory: test/gittwo
+raw content:
+tree 37?100644 hello.txt?ￎ?6%??ﾨￛﾩ?￷Vﾖ&#x7f;ﾞﾜﾣﾔFJ
+git object:
+*TREE*
+100644 ce013625030ba8dba906f756967f9e9ca394464a hello.txt
+command: list-branches
+gitDirectory: test/gittwo
+head content: ref: refs/heads/main
+result:
+  helloWithFeature1
+  helloWithFeature2
+* main
+command: log
+gitDirectory: test/gittwo
+Commit: dcec4e51e2ce4a46a6206d0d4ab33fa99d8b1ab5
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+awsome hello
+
+Commit: d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9 (merged)
+Ivan Petrovich@moon.org commit timestamp: 2021-12-11 22:43:54 -03:00
+hello of the champions
+
+Commit: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:46:28 -03:00
+maybe hello
+
+Commit: 31cddcbd00e715688cd127ad20c2846f9ed98223
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+simple hello
+
+
+command: log
+gitDirectory: test/gittwo
+Commit: c5e4a1239e11e51e95b051e2f25c3325b5004676
+Yulia yulia@coldmail.com commit timestamp: 2021-12-11 22:36:46 -03:00
+internacional hello
+
+Commit: 31cddcbd00e715688cd127ad20c2846f9ed98223
+Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+simple hello
+
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at Dec 16, 2021, 1:30:17 PM</p>
+</div>
+</div>
+</body>
+</html>

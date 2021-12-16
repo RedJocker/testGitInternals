@@ -1,0 +1,55 @@
+<h2><strong>Description</strong></h2>
+
+<p>Git has three types of objects:</p>
+
+<ul>
+	<li>
+		<p><strong>Blob</strong> stores file contents</p>
+	</li>
+	<li>
+		<p><strong>Tree </strong>stores directory structure with filenames and subdirectories</p>
+	</li>
+	<li>
+		<p><strong>Commit</strong> represents the snapshots of your project</p>
+	</li>
+</ul>
+
+<p>Any Git object file starts with a header. The header is a null-terminated string of text containing the object type and size. <em>(You should already be familiar with null-terminated strings from the previous stage.)</em></p>
+
+<h2><strong>Objectives</strong></h2>
+
+<ul>
+	<li>Write a program that asks the user for the <code>.git</code> directory location and the Git object hash.</li>
+	<li>Find the file, the path to the file is as follows: first the git directory path, followed by objects folder, followed by a folder with the first two digits of the object hash and inside is located the object file that has the remaining digits of the hash as name. In summary: <code>[git directory]/objects/[first two digits of hash]/[remaining digits of hash]</code></li>
+	<li>Output only the object header data, which contains the object type and size, using the format <code>"type:[type] length:[length]"</code>.</li>
+</ul>
+
+<h2><strong>Examples</strong></h2>
+
+<p>Note that we will not use the .git folder in this project as it is impossible to store under Git. The <code>.git</code> folder contents needed for stage testing will be stored in the “test” folder.</p>
+
+<p>The greater-than symbol followed by a space <code>&gt; </code> represents the user input. Note that it's not part of the input.</p>
+
+<p><strong>Example 1</strong></p>
+
+<pre><code class="language-no-highlight">Enter .git directory location:
+&gt; /home/my_project/.git
+Enter git object hash:
+&gt; 0eee6a98471a350b2c2316313114185ecaf82f0e
+type:commit length:216</code></pre>
+
+<p><strong>Example 2</strong></p>
+
+<pre><code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter git object hash:
+&gt; 490f96725348e92770d3c6bab9ec532564b7ebe0
+type:blob length:85</code></pre>
+
+<p><strong>Example 3</strong></p>
+
+<pre><code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter git object hash:
+&gt; a7b882bbf2db5d90287e9affc7e6f3b3c740b327
+type:tree length:35</code></pre>

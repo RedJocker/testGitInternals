@@ -1,0 +1,27 @@
+<h2><strong>Description</strong></h2>
+
+<p>Tree objects store the file name, and the SHA-1 hash of the file content which is the same as the blob file name for this file, or another tree object if it is a subdirectory. Tree objects can hold a group of files and directories.</p>
+
+<p>Tree object file structure is a bit tricky to read. Just like any other Git object, a file tree object starts with a null-terminated header. The header is followed by one or more items consisting of: a permission metadata number, a whitespace, a filename, a null char and a 20-byte long binary SHA-1. Pay attention that there is no whitespace nor null char between the SHA-1 and the next item if there is one.</p>
+
+<h2><strong>Objectives</strong></h2>
+
+<ul>
+    <li>Add support for reading tree objects to your current program</li>
+    <li>Convert the 20 byte long SHA-1 binary to hexadecimal lowercase string, which should be 40 digits long after convertion</li>
+    <li>While making the conversion zeropad the hex representation of a byte if it results in only one digit (ex: a byte with value 10 converts to &quot;0a&quot;, 0 converts to &quot;00&quot; and 200 converts to &quot;c8&quot;)&nbsp; &nbsp;</li>
+</ul>
+
+<h2><strong>Example</strong></h2>
+
+<p>The greater-than symbol followed by a space <code>&gt;&nbsp;</code> &nbsp;represents the user input. Note that it&#39;s not part of the input.</p>
+
+<pre>
+<code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter git object hash:
+&gt; 109e8050b41bd10b81be0a51a5e67327f5609551
+*TREE*
+100644 2b26c15c04375d90203783fb4c2a45ff04b571a6 main.kt
+100644 f674b5d3a4c6cef5815b4e72ef2ea1bbe46b786b readme.txt
+40000 74198c849dbbcd51d060c59253a4757eedb9bd12 some-folder</code></pre>

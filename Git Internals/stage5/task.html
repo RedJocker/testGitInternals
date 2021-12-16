@@ -1,0 +1,46 @@
+<h2><strong>Description</strong></h2>
+
+<p>Lightweight branches are known as one of the best features of Git. In Git, a branch is just one commit object like the one you parsed in stage 3! Branches do not contain any duplicates of other branches.</p>
+
+<p>The list of your local branches is typically stored in the <code>.git/refs/heads</code> directory. The file names in this folder are equal to branch names. The content in these files is equal to the commit ID of the head of the corresponding branch.</p>
+
+<p>The current HEAD is stored in the <code>.git/HEAD</code> file.</p>
+
+<p>ORIG_HEAD contains the last HEAD you worked on if you are currently in a “detached head” state.</p>
+
+<p>The list of available branches can be accessed with the <code>git branch -l</code> command.</p>
+
+<h2><strong>Objectives</strong></h2>
+
+<p>Extend your program with command names. Use the <code>cat-file</code> command name for <code>git-object</code> file printing.</p>
+
+<p>Add the <code>list-branches</code> command. This new command should print out local branch names accessible in the  <code>/refs/heads</code> directory of the specified <code>.git</code> location. The branch list should be sorted in alphabetical order. Branch names should be preceded with <code>*</code> followed by one space for the current branch and two spaces for other branches.</p>
+
+<h2><strong>Examples</strong></h2>
+
+<p>The greater-than symbol followed by a space <code>&gt; </code>  represents the user input. Note that it's not part of the input.</p>
+
+<p><strong>Example 1</strong></p>
+
+<pre><code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter command:
+&gt; list-branches
+  feature1
+  feature2
+* master</code></pre>
+
+<p><strong>Example 2</strong></p>
+
+<pre><code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter command:
+&gt; cat-file
+Enter git object hash:
+&gt; 490f96725348e92770d3c6bab9ec532564b7ebe0
+*BLOB*
+fun main() {
+    while(true) {
+        println("Hello Hyperskill student!")
+    }
+}</code></pre>

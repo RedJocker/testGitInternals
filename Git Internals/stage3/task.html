@@ -1,0 +1,101 @@
+<h2><strong>Description</strong></h2>
+
+<p>A commit is a snapshot or your project. A commit object contains the following information:</p>
+
+<ul>
+    <li>Filesystem tree</li>
+    <li>A list of parent commits</li>
+    <li>The author&#39;s name and email</li>
+    <li>Date and time when the commit was originally created</li>
+    <li>Committer&#39;s name and email (committer is the person who applied the commit)</li>
+    <li>Date and time when the commit was applied</li>
+    <li>Commit message</li>
+</ul>
+
+<p>The commit object name, also known as &quot;commit ID&quot;, is a SHA-1 hash of the commit object&rsquo;s contents.</p>
+<p>A commit may have no parent if it is the initial commit.</p>
+
+<p>A commit may have two parents if it is a merge commit. In this case, the <strong> first parent </strong> is the preceding commit in the <strong> current branch</strong>, and the <strong>second parent</strong> is the preceding commit from the <strong>branch being merged</strong>.</p>
+
+<p>The author and committer differ if the commit was cherry-picked or changed during a merge, rebase, or another operation.</p>
+
+<p>The commit file structure is straightforward: the git object header is followed by plain text lines in the same order as in the description above.</p>
+
+<h2><strong>Objectives</strong></h2>
+
+<ul>
+    <li>Your program now should detect the object type for the specified file, and print out the object&rsquo;s type and contents.</li>
+    <li>The content should be reformatted as in the example. In this stage, you should support blobs and commits.</li>
+    <li>If the commit has no parent skip the parents line on output</li>
+    <li>If the commit has two parents join their hashes separated by <code>" | "</code>, keeping the same order that was in the file</li>
+    <li>You will also have to translate a unix epoch timestamp to human readable date and time. You can construct a <a href="https://developer.android.com/reference/java/time/Instant" rel="noopener noreferrer nofollow">java.time.Instant</a> object of the timestamp and use <a href="https://developer.android.com/reference/java/time/format/DateTimeFormatter" rel="noopener noreferrer nofollow">java.time.format.DateTimeFormatter</a> to print it out.</li>
+    <li>It is guaranteed that a name (author or committer) does not contain white spaces in middle of the name</li>
+    <li>Commit messages may have multiple lines</li>
+</ul>
+
+<p>Please keep in mind that commit messages usually have an empty line at the end.</p>
+
+<h2><strong>Examples</strong></h2>
+
+<p>The greater-than symbol followed by a space <code>&gt;&nbsp;</code> &nbsp;represents the user input. Note that it&#39;s not part of the input.</p>
+
+<p><strong>Example 1</strong></p>
+
+<pre>
+<code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter git object hash:
+
+&gt;490f96725348e92770d3c6bab9ec532564b7ebe0
+*BLOB*
+fun main() {
+    while(true) {
+        println("Hello Hyperskill student!")
+    }
+}</code></pre>
+
+<p><strong>Example 2</strong></p>
+
+<pre>
+<code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter git object hash:
+&gt; 0eee6a98471a350b2c2316313114185ecaf82f0e
+*COMMIT*
+tree: 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parents: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author: Smith mr.smith@matrix original timestamp: 2020-03-29 17:18:20 +03:00
+committer: Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+commit message:
+get docs from feature1</code></pre>
+
+<p><strong>Example 3</strong></p>
+
+<pre>
+<code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gittwo
+Enter git object hash:
+&gt; 31cddcbd00e715688cd127ad20c2846f9ed98223
+*COMMIT*
+tree: aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:31:36 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+commit message:
+simple hello</code></pre>
+
+<p><strong>Example 4</strong></p>
+
+<pre>
+<code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gittwo
+Enter git object hash:
+&gt; dcec4e51e2ce4a46a6206d0d4ab33fa99d8b1ab5
+*COMMIT*
+tree: d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parents: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f | d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:49:02 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+commit message:
+awsome hello</code></pre>
+
+

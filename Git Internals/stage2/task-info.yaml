@@ -1,0 +1,20 @@
+type: edu
+files:
+- name: test/GitInternalsTest.java
+  visible: false
+- name: test/gitone/objects/0e/ee6a98471a350b2c2316313114185ecaf82f0e
+  visible: false
+- name: test/gitone/objects/49/0f96725348e92770d3c6bab9ec532564b7ebe0
+  visible: false
+- name: test/gitone/objects/61/8383db6d7ee3bd2e97b871205f113b6a3ba854
+  visible: false
+- name: test/gitone/objects/a7/b882bbf2db5d90287e9affc7e6f3b3c740b327
+  visible: false
+- name: test/gitone/objects/ad/3a818dc87b9940935b24a5aa93fac00f086bf9
+  visible: false
+- name: test/gitone/objects/fb/043556c251cb450a0d55e4ceb1ff35e12029c3
+  visible: false
+- name: src/gitinternals/Main.kt
+  visible: true
+- name: src/gitinternals/Parser.kt
+  visible: true

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class GitInternalsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class GitInternalsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; GitInternalsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.451s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">start</td>
+<td class="success">0.451s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[1;31m
+Start test 1?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter git object hash:
+&gt; 0eee6a98471a350b2c2316313114185ecaf82f0e
+*COMMIT*
+tree: 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parents: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author: Smith mr.smith@matrix original timestamp: 2020-03-29 17:18:20 +03:00
+committer: Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+commit message:
+get docs from feature1
+
+?[1;31m
+Start test 2?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter git object hash:
+&gt; 490f96725348e92770d3c6bab9ec532564b7ebe0
+*BLOB*
+fun main() {
+    while(true) {
+        println(&quot;Hello Hyperskill student!&quot;)
+    }
+} 
+
+?[1;31m
+Start test 3?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter git object hash:
+&gt; 618383db6d7ee3bd2e97b871205f113b6a3ba854
+*BLOB*
+Hello world! 
+
+?[1;31m
+Start test 4?[0m
+Enter .git directory location:
+&gt; test/gitone
+Enter git object hash:
+&gt; 39a0337532d7720acc90497043e2ade92c386939
+*COMMIT*
+tree: 998b5fa98f0fae83e6cb24a8815b8923aead7ee0
+parents: 6d537a47eddc11f866bcc2013703bf31bfcf9ed8
+author: Neo neo@matrix original timestamp: 2020-04-04 09:59:23 +03:00
+committer: Neo neo@matrix commit timestamp: 2020-04-04 09:59:23 +03:00
+commit message:
+this commit message will have multiple lines
+we need multiple lines commit message for test purposes
+3
+4
+5
+
+?[1;31m
+Start test 5?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter git object hash:
+&gt; 31cddcbd00e715688cd127ad20c2846f9ed98223
+*COMMIT*
+tree: aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:31:36 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+commit message:
+simple hello
+
+?[1;31m
+Start test 6?[0m
+Enter .git directory location:
+&gt; test/gittwo
+Enter git object hash:
+&gt; dcec4e51e2ce4a46a6206d0d4ab33fa99d8b1ab5
+*COMMIT*
+tree: d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parents: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f | d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:49:02 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+commit message:
+awsome hello
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>raw content:
+commit 216?tree 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parent 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author Smith &lt;mr.smith@matrix&gt; 1585491500 +0300
+committer Cypher &lt;cypher@matrix&gt; 1585491952 +0300
+
+get docs from feature1
+
+Git Object:
+*COMMIT*
+tree: 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parents: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author: Smith mr.smith@matrix original timestamp: 2020-03-29 17:18:20 +03:00
+committer: Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+commit message:
+get docs from feature1
+
+raw content:
+blob 85?fun main() {
+    while(true) {
+        println(&quot;Hello Hyperskill student!&quot;)
+    }
+} 
+
+Git Object:
+*BLOB*
+fun main() {
+    while(true) {
+        println(&quot;Hello Hyperskill student!&quot;)
+    }
+} 
+
+raw content:
+blob 14?Hello world! 
+
+Git Object:
+*BLOB*
+Hello world! 
+
+raw content:
+commit 287?tree 998b5fa98f0fae83e6cb24a8815b8923aead7ee0
+parent 6d537a47eddc11f866bcc2013703bf31bfcf9ed8
+author Neo &lt;neo@matrix&gt; 1585983563 +0300
+committer Neo &lt;neo@matrix&gt; 1585983563 +0300
+
+this commit message will have multiple lines
+we need multiple lines commit message for test purposes
+3
+4
+5
+
+Git Object:
+*COMMIT*
+tree: 998b5fa98f0fae83e6cb24a8815b8923aead7ee0
+parents: 6d537a47eddc11f866bcc2013703bf31bfcf9ed8
+author: Neo neo@matrix original timestamp: 2020-04-04 09:59:23 +03:00
+committer: Neo neo@matrix commit timestamp: 2020-04-04 09:59:23 +03:00
+commit message:
+this commit message will have multiple lines
+we need multiple lines commit message for test purposes
+3
+4
+5
+
+raw content:
+commit 167?tree aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author Kalinka &lt;Kali.k4@email.com&gt; 1639272696 -0300
+committer Kalinka &lt;Kali.k4@email.com&gt; 1639272696 -0300
+
+simple hello
+
+Git Object:
+*COMMIT*
+tree: aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:31:36 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+commit message:
+simple hello
+
+raw content:
+commit 263?tree d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parent 5ad3239e54ba7c533d9f215a13ac82d14197cd8f
+parent d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author Kalinka &lt;Kali.k4@email.com&gt; 1639273742 -0300
+committer Kalinka &lt;Kali.k4@email.com&gt; 1639273742 -0300
+
+awsome hello
+
+Git Object:
+*COMMIT*
+tree: d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parents: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f | d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:49:02 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+commit message:
+awsome hello
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at Dec 16, 2021, 1:23:01 PM</p>
+</div>
+</div>
+</body>
+</html>

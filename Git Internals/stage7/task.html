@@ -1,0 +1,28 @@
+<h2><strong>Description</strong></h2>
+
+<p>Finally, let&#39;s try to get the full filesystem tree of the project for the&nbsp;specified&nbsp;commit.</p>
+
+<p>As you remember from stage 4, a tree object contains the file and the&nbsp;subdirectory list for one folder. To get the full project tree, you should recursively iterate through tree objects.</p>
+
+<h2><strong>Objectives</strong></h2>
+
+<ul>
+    <li>Extend your program with the <code>commit-tree</code>&nbsp;command.</li>
+    <li>Ask&nbsp;the user to specify the commit.</li>
+    <li>Print out the full file tree.</li>
+</ul>
+
+<h2><strong>Example</strong></h2>
+
+<p>The greater-than symbol followed by a space <code>&gt;&nbsp;</code> &nbsp;represents the user input. Note that it&#39;s not part of the input.</p>
+
+<pre>
+<code class="language-no-highlight">Enter .git directory location:
+&gt; task/test/gitone
+Enter command:
+&gt; commit-tree
+Enter commit-hash:
+&gt; fd362f3f305819d17b4359444aa83e17e7d6924a
+main.kt
+readme.txt
+some-folder/qq.txt</code></pre>

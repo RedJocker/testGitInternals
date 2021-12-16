@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GitInternalsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-16T16:24:54" hostname="Reds-MacBook-Pro.local" time="0.492">
+  <properties/>
+  <testcase name="start" classname="GitInternalsTest" time="0.492"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Enter .git directory location:
+> test/gitone
+Enter git object hash:
+> 0eee6a98471a350b2c2316313114185ecaf82f0e
+*COMMIT*
+tree: 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parents: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author: Smith mr.smith@matrix original timestamp: 2020-03-29 17:18:20 +03:00
+committer: Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+commit message:
+get docs from feature1
+
+?[1;31m
+Start test 2?[0m
+Enter .git directory location:
+> test/gitone
+Enter git object hash:
+> 490f96725348e92770d3c6bab9ec532564b7ebe0
+*BLOB*
+fun main() {
+    while(true) {
+        println("Hello Hyperskill student!")
+    }
+} 
+
+?[1;31m
+Start test 3?[0m
+Enter .git directory location:
+> test/gitone
+Enter git object hash:
+> fb043556c251cb450a0d55e4ceb1ff35e12029c3
+*TREE*
+100644 2b26c15c04375d90203783fb4c2a45ff04b571a6 main.kt
+100644 4a8abe7b618ddf9c55adbea359ce891775794a61 readme.txt
+?[1;31m
+Start test 4?[0m
+Enter .git directory location:
+> test/gitone
+Enter git object hash:
+> ad3a818dc87b9940935b24a5aa93fac00f086bf9
+*TREE*
+100644 c2d888ec7f06b71b5ec8712b0464d1ca7a0a9ffc main.kt
+?[1;31m
+Start test 5?[0m
+Enter .git directory location:
+> test/gitone
+Enter git object hash:
+> 109e8050b41bd10b81be0a51a5e67327f5609551
+*TREE*
+100644 2b26c15c04375d90203783fb4c2a45ff04b571a6 main.kt
+100644 f674b5d3a4c6cef5815b4e72ef2ea1bbe46b786b readme.txt
+40000 74198c849dbbcd51d060c59253a4757eedb9bd12 some-folder
+?[1;31m
+Start test 6?[0m
+Enter .git directory location:
+> test/gitone
+Enter git object hash:
+> 74198c849dbbcd51d060c59253a4757eedb9bd12
+*TREE*
+100644 83cc19099347924da28890838ad5e698da8504a3 qq.txt
+?[1;31m
+Start test 7?[0m
+Enter .git directory location:
+> test/gitone
+Enter git object hash:
+> 74198c849dbbcd51d060c59253a4757eedb9bd12
+*TREE*
+100644 83cc19099347924da28890838ad5e698da8504a3 qq.txt
+?[1;31m
+Start test 8?[0m
+Enter .git directory location:
+> test/gittwo
+Enter git object hash:
+> 31cddcbd00e715688cd127ad20c2846f9ed98223
+*COMMIT*
+tree: aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:31:36 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+commit message:
+simple hello
+
+?[1;31m
+Start test 9?[0m
+Enter .git directory location:
+> test/gittwo
+Enter git object hash:
+> dcec4e51e2ce4a46a6206d0d4ab33fa99d8b1ab5
+*COMMIT*
+tree: d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parents: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f | d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:49:02 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+commit message:
+awsome hello
+
+?[1;31m
+Start test 10?[0m
+Enter .git directory location:
+> test/gittwo
+Enter git object hash:
+> aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+*TREE*
+100644 ce013625030ba8dba906f756967f9e9ca394464a hello.txt
+]]></system-out>
+  <system-err><![CDATA[raw content:
+commit 216?tree 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parent 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author Smith <mr.smith@matrix> 1585491500 +0300
+committer Cypher <cypher@matrix> 1585491952 +0300
+
+get docs from feature1
+
+Git Object:
+*COMMIT*
+tree: 79401ddb0e2c0fe0472c813754dd4a8873b66a84
+parents: 12a4717e84b5e414f93cc91ca50a6d5a6c3563a0
+author: Smith mr.smith@matrix original timestamp: 2020-03-29 17:18:20 +03:00
+committer: Cypher cypher@matrix commit timestamp: 2020-03-29 17:25:52 +03:00
+commit message:
+get docs from feature1
+
+raw content:
+blob 85?fun main() {
+    while(true) {
+        println("Hello Hyperskill student!")
+    }
+} 
+
+Git Object:
+*BLOB*
+fun main() {
+    while(true) {
+        println("Hello Hyperskill student!")
+    }
+} 
+
+raw content:
+tree 73?100644 main.kt?+&￁\?7]ﾐ 7ﾃ￻L*E??ﾵqﾦ100644 readme.txt?Jﾊﾾ{aﾍ￟ﾜUﾭﾾﾣYￎﾉ?uyJa
+Git Object:
+*TREE*
+100644 2b26c15c04375d90203783fb4c2a45ff04b571a6 main.kt
+100644 4a8abe7b618ddf9c55adbea359ce891775794a61 readme.txt
+raw content:
+tree 35?100644 main.kt?ￂ￘ﾈ￬]]>&#x7f;<![CDATA[?ﾷ?^￈q+?d￑ￊz
+ﾟ￼
+Git Object:
+*TREE*
+100644 c2d888ec7f06b71b5ec8712b0464d1ca7a0a9ffc main.kt
+raw content:
+tree 111?100644 main.kt?+&￁\?7]ﾐ 7ﾃ￻L*E??ﾵqﾦ100644 readme.txt?￶tﾵￓﾤￆￎ￵ﾁ[Nr￯.ﾡﾻ￤kxk40000 some-folder?t?ﾌﾄﾝﾻￍQ￐`ￅﾒSﾤu~￭ﾹﾽ?
+Git Object:
+*TREE*
+100644 2b26c15c04375d90203783fb4c2a45ff04b571a6 main.kt
+100644 f674b5d3a4c6cef5815b4e72ef2ea1bbe46b786b readme.txt
+40000 74198c849dbbcd51d060c59253a4757eedb9bd12 some-folder
+raw content:
+tree 34?100644 qq.txt?ﾃￌ?	ﾓGﾒMﾢﾈﾐﾃﾊￕ￦ﾘￚﾅ?ﾣ
+Git Object:
+*TREE*
+100644 83cc19099347924da28890838ad5e698da8504a3 qq.txt
+raw content:
+tree 34?100644 qq.txt?ﾃￌ?	ﾓGﾒMﾢﾈﾐﾃﾊￕ￦ﾘￚﾅ?ﾣ
+Git Object:
+*TREE*
+100644 83cc19099347924da28890838ad5e698da8504a3 qq.txt
+raw content:
+commit 167?tree aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author Kalinka <Kali.k4@email.com> 1639272696 -0300
+committer Kalinka <Kali.k4@email.com> 1639272696 -0300
+
+simple hello
+
+Git Object:
+*COMMIT*
+tree: aaa96ced2d9a1c8e72c56b253a0e2fe78393feb7
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:31:36 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:31:36 -03:00
+commit message:
+simple hello
+
+raw content:
+commit 263?tree d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parent 5ad3239e54ba7c533d9f215a13ac82d14197cd8f
+parent d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author Kalinka <Kali.k4@email.com> 1639273742 -0300
+committer Kalinka <Kali.k4@email.com> 1639273742 -0300
+
+awsome hello
+
+Git Object:
+*COMMIT*
+tree: d128f76a96c56ac4373717d3fbba4fa5875ca68f
+parents: 5ad3239e54ba7c533d9f215a13ac82d14197cd8f | d2c5bedbb2c46945fd84f2ad209a7d4ee047f7f9
+author: Kalinka Kali.k4@email.com original timestamp: 2021-12-11 22:49:02 -03:00
+committer: Kalinka Kali.k4@email.com commit timestamp: 2021-12-11 22:49:02 -03:00
+commit message:
+awsome hello
+
+raw content:
+tree 37?100644 hello.txt?ￎ?6%??ﾨￛﾩ?￷Vﾖ]]>&#x7f;<![CDATA[ﾞﾜﾣﾔFJ
+Git Object:
+*TREE*
+100644 ce013625030ba8dba906f756967f9e9ca394464a hello.txt
+]]></system-err>
+</testsuite>
